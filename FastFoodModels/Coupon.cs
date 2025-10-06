@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FastFoodModels;
 
 namespace FastFoodModels
 {
@@ -13,7 +14,7 @@ namespace FastFoodModels
         public string Type { get; set; }
         public double Discount { get; set; }
         public double MinimumAmount { get; set; }
-        public [] byte CouponPicture { get; set; }
+        public byte[] CouponPicture { get; set; }
         public bool IsActive { get; set; }
 
     }
