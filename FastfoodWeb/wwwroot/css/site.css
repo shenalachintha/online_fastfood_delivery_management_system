@@ -20,3 +20,22 @@ html {
 body {
   margin-bottom: 60px;
 }
+.login-bg {
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.login-card {
+    border-radius: 1.25rem;
+    border: none;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.08), 0 1.5px 4px rgba(0,0,0,0.03);
+    padding: 2rem 1.5rem;
+}
+
+.login-icon {
+    width: 48px;
+    height: 48px;
+    opacity: 0.8;
+}

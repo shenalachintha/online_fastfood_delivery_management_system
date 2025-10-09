@@ -1,0 +1,40 @@
+@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "_Layout";
+}
+
+<div class="login-bg">
+    <div class="row justify-content-center align-items-center min-vh-100">
+        <div class="col-md-6 col-lg-4">
+            <div class="card login-card shadow-lg">
+                <div class="card-body">
+                    <div class="text-center mb-4">
+                        <img src="~/images/login-icon.png" alt="Register" class="login-icon mb-2" />
+                        <h2 class="card-title mb-0">@ViewData["Title"]</h2>
+                        <p class="text-muted small">Create your account</p>
+                    </div>
+                    <form method="post">
+                        <div class="form-group mb-3">
+                            <label class="form-label">1. Email</label>
+                            <input asp-for="Input.Email" class="form-control" autocomplete="username" />
+                            <span asp-validation-for="Input.Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="form-label">2. Password</label>
+                            <input asp-for="Input.Password" class="form-control" type="password" autocomplete="new-password" />
+                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="form-label">3. Confirm Password</label>
+                            <input asp-for="Input.ConfirmPassword" class="form-control" type="password" autocomplete="new-password" />
+                            <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
